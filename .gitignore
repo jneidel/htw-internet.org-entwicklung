@@ -3,5 +3,11 @@
 *.log
 *.synctex.gz
 
+# biber
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
 # output
 *.pdf
