@@ -1,0 +1,17 @@
+#! /bin/sh
+
+FILE="main"
+
+if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$1" = "help" ]; then
+  printf "$ build
+Build the project.
+"; exit
+fi
+
+command -v pdflatex >/dev/null || { echo "pdflatex is not installed"; exit 1; }
+command -v biber >/dev/null || { echo "biber is not installed"; exit 1; }
+
+pdflatex main
+biber main
+pdflatex main
+
