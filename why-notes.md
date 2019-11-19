@@ -18,7 +18,7 @@
   - higher latency when routed through facebooks proxies
       main servers in eu,
       constant routing through these, no attempts to optimize based on server or
-      client location
+
   - ISP throttling: on same SIM card, requests for paid content get 4x-12x speed
   - throttling at facebook proxies to 150Kb/s
 
@@ -41,7 +41,7 @@
   - Airtel does differential pricing for Skype/Whatsapp to allow voice based services,
     public criticism, TRAI had not strict rules on net neutraility to do something about it
 - [Feb 2015]
-  - Facebook partners with Reliance, Internet.org launched in India (partially)
+  - Facebook partners with Reliance, Internet.org formally launched in India
   - Airtel Zero (simliar concept), aggressive criticism, stopped service
   - Internet.org becomes target, indian startups withdraw from the service
 - [Apr 2015]
@@ -65,6 +65,13 @@
 - [Feb 2016]
   - TRAI Ban under "Prohibitions of Discriminiatory tariffs for Data Services
     Regulation 2016"
+
+## prasad2017
+
+- "given that a majority of the population are yet to be connected to the
+  Internet, allowing service providers to define the nature of access would be
+  equivalent to letting TSPs [Telephony Service Provider] shape the users' Internet experience" (TRAI)
+- 
 
 ## Opinion
   
