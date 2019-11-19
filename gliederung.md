@@ -6,8 +6,8 @@
 - (Was, Beschreibung) Projekt Beschreibung
   -Konzept für Internet.org/Free Basics 
     - Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
-        -die Facebook erwähnt hat
-        -andere
+      -die Facebook erwähnt hat
+      -andere
     - Geplante Umsetzung (Facebooks riesige Erwartung an Indien mit einfließen lassen)
   - Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
     - Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
