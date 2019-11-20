@@ -6,7 +6,7 @@
 - (Was, Beschreibung) Projekt Beschreibung
   -Konzept für Internet.org/Free Basics 
     - Facebooks Absicht/Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
-      - Offiziell (Facebook selbst)
+      - Offiziell (Facebook selbst, Basiert auf Facebook Zero)
       - Inoffiziell (Andere Quellen)
     - Geplante Umsetzung/Idee/Konzept (Facebooks riesige Erwartung an Indien mit einfließen lassen)
   - Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
