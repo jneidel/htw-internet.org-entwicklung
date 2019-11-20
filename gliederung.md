@@ -5,9 +5,9 @@
 
 - (Was, Beschreibung) Projekt Beschreibung
   -Konzept für Internet.org/Free Basics 
-    - Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
-      -die Facebook erwähnt hat
-      -andere
+    - Facebooks Absicht/Idee/Konzept/Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
+      - Offiziell (Facebook selbst)
+      - Inoffiziell (Andere Quellen)
     - Geplante Umsetzung (Facebooks riesige Erwartung an Indien mit einfließen lassen)
   - Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
     - Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
@@ -21,4 +21,3 @@
   - Rebranding als Free Basics (Auslöser auf FBs Seite, nähe zu Modis Digital Internet Initiative, mehr Werbung, stärker werdender Protest)
   - Nationaler Start (Google leaves, public opinion, TRAI accusations, FB urges user to work for them)
   - Verbot durch Regulatoren (TRAIs "Prohibitions of Discriminiatory tariffs for Data Services Regulation 2016", aftermath)
-
