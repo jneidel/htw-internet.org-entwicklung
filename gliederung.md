@@ -5,10 +5,10 @@
 
 - (Was, Beschreibung) Projekt Beschreibung
   -Konzept für Internet.org/Free Basics 
-    - Facebooks Absicht/Idee/Konzept/Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
+    - Facebooks Absicht/Gründe für Internet.org (Ausgangssituation für Facebook, weshalb machen sie es)
       - Offiziell (Facebook selbst)
       - Inoffiziell (Andere Quellen)
-    - Geplante Umsetzung (Facebooks riesige Erwartung an Indien mit einfließen lassen)
+    - Geplante Umsetzung/Idee/Konzept (Facebooks riesige Erwartung an Indien mit einfließen lassen)
   - Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
     - Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
     - Internetverbreitung (kurz anschneiden, Bezug nehmen auf die Zielgruppe von Free Basics, i.e. the rural poor)
