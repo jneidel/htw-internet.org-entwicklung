@@ -71,7 +71,57 @@
 - "given that a majority of the population are yet to be connected to the
   Internet, allowing service providers to define the nature of access would be
   equivalent to letting TSPs [Telephony Service Provider] shape the users' Internet experience" (TRAI)
-- 
+- Modi pushes the narative that the rising superpower India is fueled by its
+  technological prowess, thus giving more political power to those that create
+  technology
+- different rhetoric in facebook promoting internet.org (free internet for all)
+  and reliance promoting the service (free facebook)
+- before facebook was trying to give the rural poor access to information,
+  science, social structure, there were the same promises with radio and TV
+- widespread belief in technology's ability to lift people out of poverty
+  disregarding the historic/political structures that are responsible for that
+  inequality
+- so the principle to Indias developmental projects are based on the idea that
+  you only need to provide the people with technology/information and through
+  their innate ability to use it and their better access to markets and
+  ressources they will be able to raise their incomes
+  - tech fueled development is celebrated by facebook, indian govs, STI
+
+- STI composed of tech startup workers (coders, devs), focused on tech policy
+  (law, journalism)
+- their way of campagning, technopolitics:
+  - spreading awareness through internet platforms (reddit, twitter, youtube,
+    own blog)
+  - get endorsements from tech companies 
+  - go directly against the other sides supporters (flipkart initially supported
+    zero-rated plans, but reversed their position after backlash from users)
+  - deliberatly choosen name, logo, hashtags, vocabulary to associate the movment with the
+    net neutrality movment of the US, and emulating them as well
+  - parterned with comedy group AIB (videos) targeted at indias digital natives
+- for STI it was also about having a level playing field, the FreeBasics system would make
+  access harder for a new app
+- STIs members (high-tech workers) only represent 2% of the population (70%
+  farmers), but they hold a special place in the image of a "New India"
+  (aspirational class)
+  - symbol of indias success in the global economy
+  - links with the american tech sector (silicon valley) both finacially and
+    socially (in 90s 8% of SF startups were led indians)
+  - symbol of the middle class climbing into a higher one through middle class
+    values (hard work, honesty, austerity)
+
+## Two Bits
+
+- recursive public
+  - geeks/technial people sharing a "moral imagination of the technical
+    infrastructure" i.e. the internet, coming together to preserver their means
+    of association
+  - the public is "constituted by a shared concern for maintaining the means of association
+    through which they come together as a public" (p 28)
+  - "geeks find affinity with on another because they share an abiding moral
+    imagination of the techinal infrastructure, the Internet, that has allowed
+    them to develop and maintain this affinity in the first place" (p 28)
+
+## https://www.wired.com/2016/02/how-india-pierced-facebooks-free-internet-program/#.s01ev02sp
 
 ## Opinion
   
