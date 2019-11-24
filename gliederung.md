@@ -13,7 +13,7 @@
     - 1.2.1 Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
     - 1.2.2 Internetverbreitung (kurz anschneiden, Bezug nehmen auf die Zielgruppe von Free Basics, i.e. the rural poor)
     - 1.2.3 Netzneutralität (voherige Vorfälle, e.g. Airtel differntial pricing for Skype/Whatsapp in 2014 [see: "Everyday Life in Tamil Nadu"]; Stand der Bevölkerung)
-    - 1.2.4 Recursive Public (Beleutung der Aktivisten/Tech worker [see: "prasad2017" or "Two Bits - The Cultural Significance of Free Software" for recursive public explaination])
+    - 1.2.4 ~~Aktivisten~~
 - 2 (Wie, Beschreibung/Kritik) Zeitlicher Ablauf
   - 2.1 Übersicht
   - 2.2 Formaler Start (initielle Reaktion der Bevölkerung, zeitgleiche ähnliche Services - Airtel again, Startups jump ship, technischen Aspekte des Services [see: "acmdl17-115/walled garden"])
