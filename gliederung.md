@@ -12,8 +12,8 @@
     - 1.2.2 Internetverbreitung (kurz anschneiden, Bezug nehmen auf die Zielgruppe von Free Basics, i.e. the rural poor)
     - 1.2.3 ~~Netzneutralität~~
     - 1.2.4 ~~Aktivisten~~
-- 2 (Wie, Beschreibung/Kritik) Zeitlicher Ablauf
-  - 2.1 Übersicht
+- 2 ~~Lebenszyklus der Initative~~
+  - 2.1 ~~Übersicht~~
   - 2.2 Formaler Start (initielle Reaktion der Bevölkerung, zeitgleiche ähnliche Services - Airtel again, Startups jump ship, technischen Aspekte des Services [see: "acmdl17-115/walled garden"])
   - 2.3 Start in ausgewählten Regionen (reliance as provider, sinnhaftigkeit für die rural poor [see: "Everyday Life in Tamil Nadu"], beleuchtung der Diskussion, Werbekampage von FB und deren Absicht, transparente Guidelines für Webseiten)
   - 2.4 Rebranding als Free Basics (Auslöser auf FBs Seite, nähe zu Modis Digital Internet Initiative, mehr Werbung, stärker werdender Protest)
