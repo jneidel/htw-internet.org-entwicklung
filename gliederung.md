@@ -10,7 +10,7 @@
   - 1.2 Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
     - 1.2.1 Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
     - 1.2.2 Internetverbreitung (kurz anschneiden, Bezug nehmen auf die Zielgruppe von Free Basics, i.e. the rural poor)
-    - 1.2.3 Netzneutralität (voherige Vorfälle, e.g. Airtel differntial pricing for Skype/Whatsapp in 2014 [see: "Everyday Life in Tamil Nadu"]; Stand der Bevölkerung)
+    - 1.2.3 ~~Netzneutralität~~
     - 1.2.4 ~~Aktivisten~~
 - 2 (Wie, Beschreibung/Kritik) Zeitlicher Ablauf
   - 2.1 Übersicht
