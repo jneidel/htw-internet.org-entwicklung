@@ -3,8 +3,8 @@
 (In dieser Form um Änderungen leichter nachvollziehen zu können.
 Über obigen History button seht Ihr alle changes in chronologischer Reinfolge.)
 
-- 1 (Was, Beschreibung) Projekt Beschreibung
-  - 1.1 Konzept für Internet.org/Free Basics 
+- 1 ~~Ausgangsbedingungen~~
+  - 1.1 ~~Internet.org/Free Basics~~
     - 1.1.1 ~~Facebooks Absicht/Gründe für Internet.org~~
     - 1.1.2 Geplante Umsetzung/Idee/Konzept (Facebooks riesige Erwartung an Indien mit einfließen lassen)
   - 1.2 Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
