@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[backend=biber]{biblatex}
+\usepackage{packages/timeline}
 \addbibresource{bibliography.bib}
 
 \title{Wie entwickelte sich Facebooks Internet.org/Free Basics in Indien?}
@@ -18,6 +19,20 @@
 \begin{document}
 
 \maketitle
+
+% 2 in der Gliederung
+\section{Lebenszyklus der Initative}
+
+\subsection{Übersicht}
+
+\definecolor{BGColor}{rgb}{1.0,1.0,1.0}
+\begin{timeline}{2015}{2017}{250}{145}
+  \MonthAndYearEvent{2}{2015}{Formeller Start}
+  \MonthAndYearEvent{4}{2015}{Partielle Einführung}
+  \MonthAndYearEvent{7}{2015}{Umbenennung zu Free Basics}
+  \MonthAndYearEvent{11}{2015}{Vollständige Einführung}
+  \MonthAndYearEvent{2}{2016}{Verbot}
+\end{timeline}
 
 % \printbibliography
 \end{document}
