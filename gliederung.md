@@ -6,7 +6,7 @@
 - 1 ~~Ausgangsbedingungen~~
   - 1.1 ~~Internet.org/Free Basics~~
     - 1.1.1 ~~Facebooks Absicht/Gründe für Internet.org~~
-    - 1.1.2 Geplante Umsetzung/Idee/Konzept (Facebooks riesige Erwartung an Indien mit einfließen lassen)
+    - 1.1.2 ~~Geplante Umsetzung~~
   - 1.2 Ausgangssituation/Vorstellung der Player und Umgebung (Reinfolge ist offen)
     - 1.2.1 Facebook (Verbreitung, Akzeptanz in der Bevölkerung)
     - 1.2.2 Internetverbreitung (kurz anschneiden, Bezug nehmen auf die Zielgruppe von Free Basics, i.e. the rural poor)
