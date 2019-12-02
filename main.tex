@@ -1,5 +1,12 @@
 \documentclass{article}
-\usepackage[backend=biber]{biblatex}
+\usepackage[
+backend=biber,
+style=authoryear,
+citestyle=authoryear,
+autocite=footnote
+]{biblatex}
+\usepackage{packages/timeline}
+\usepackage[ngerman]{babel}
 \addbibresource{bibliography.bib}
 
 \title{Wie entwickelte sich Facebooks Internet.org/Free Basics in Indien?}
@@ -18,6 +25,16 @@
 \begin{document}
 
 \maketitle
+
+% 1
+\section{Ausgangsbedingungen}
+
+Zunächst wird ein Überblick über die Ausgangsbedingungen in Indien geschaffen. Von der Internetverbreitung, Ihrer Beziehung zu Facebook, vorherigen Diskussionen zur Netzneutralität sowie einer Beschreibung der Aktivisten, welche sich gegen Facebooks Initiative wendeten.
+
+Als Erstes wird nun aber das Konzept für Internet.org/Free Basics vorgestellt, gefolgt von einer Beleuchtung von Facebooks Beweggründe für die Gründung der Initiative.
+
+% 1.1
+\subsection{Internet.org/Free Basics}
 
 % 1.2.1
 \subsubsection{Facebook}
@@ -40,5 +57,187 @@ Neben diesen bleib auch die Internetgeschwindigkeit ein Problem, mit welcher die
 Facebook versuchte auf dieses Problem mit der Messenger App einzugehen, in welcher nur Chats geladen werden, was aber nicht die endgültige Lösung darstellte.
 Als eine weiterer Lösungsansatz gilt das Konzept für Internet.org.
 
+% 1.2.2
+\subsubsection{Internetverbreitung}
+
+In Indien leben 2015 schon 350 Millionen Menschen welche das Internet aktiv nutzen\autocite{slideshareIndia}, wovon allein 159 Millionen per Mobilgerät unterwegs sind.
+Obwohl Indien damit schon den 2. Platz der aktiven Internetnutzer weltweit genießt, haben lediglich 27\% der indischen Bevölkerung Zugang zum Internet\autocite{InternetCountry}.
+\medskip 
+Ein Computer ist in Indien ein Luxusgut, welches durch die rasante Entwicklung von mobilen Endgeräten für die Jugend schnell an Bedeutung verlor, während Handys mit mobilem Internet allgegenwärtig wurden.
+Durch die explosionsartige Verbreitung der neuen Kommunikationsmöglichkeiten entstanden in kürzester Zeit große Gruppen im Internet, welche sich über neue Technologien, Wissenswertes und Ihre Interessen austauschten.
+Dieser rapide Aufbau von indivuellen Gruppen ist ein neues Phänomen, welches vorallem in Entwicklungsländern auftritt, in denen neue, und vergleichsweise preiswerte Technologien, den Zugang zum Internet ermöglichen \textcite{empowermentThroughFacebook}.
+\medskip
+Die durchschnittliche Bandbreite mobilen Internets war mit 2.8 Mb/s der durchschnittlichen Bandbreite eines Festanschlusses, von 2.3 Mb/s, überlegen \autocite{slideshareIndia}, wodurch das Interesse an einen Computer noch mehr abnahm.
+Der Preis einer Prepaid Karte mit 1 GB Datenvolumen betrug damals ca. 3.55\% des durchschnittlichen Monatsgehalt\autocite{broadbandAgency}, und ist durch den hohen Preis nur für städtisch lebende Inder erschwinglich, da dort das Einkommen weitaus höher ist.
+Obwohl gerademal 31,2\% der indischen Bevölkerung in städtischen Gebieten lebt, machen sie 82\% der aktiven Internetnutzer aus\autocite{IndiaBevölkerung}.
+Somit benutzten 2015 gerademal 7.5 \%, auf dem Land lebende Inder, aktiv das Internet \autocite{slideshareIndia}.
+
+Die fehlende weitreichende Abdeckung der Internetleitungen und der vergleichsweise hohe Datentarif sind schwerwiegende Probleme, welche Facebook inc. mit Internet.org lösen will.
+
+% 1.2.3
+\subsubsection{Netzneutralität} \label{netzneutralität}
+
+Netzneutralität, oder `Net Neutrality' im Englischen, beschreibt ein Prinzip, nach welchem ein Internetanbieter allen Datenverkehr gleich behandelt, dass heißt ohne bestimmte Internetangebote langsamer oder teurer zu machen als andere \autocite{netzneutralität}.
+
+\medskip
+
+Indiens Vergangenheit ist im Bezug auf Netzneutralität noch sehr jung. So gab es vor Internet.org keine bestehende Verordnungen, und nur einige Vorfälle, welche eine Diskussion des Themas veranlassten.
+Beide relevanten Debatten, ausgelöst vom lokalen Mobilfunkprovider Airtel, zielten darauf entgangene Gewinne des Konzerns ausgleichen zu lassen.
+So wurde 2012 die Möglichkeit zur Besteuerung von Youtube, Google, Facebook, und Co. vorgeschlagen um für deren großen Teil am Datenverkehr zu kompensieren.
+Auch 2014 ging es um eine ähnliche Problematik: so sollten VoIP (Voice over IP, Internettelefonie) Daten teurer sein als sonstige mobile Daten.
+Beide Vorschläge führten zu keinem Ergebnis und wurden zum Teil stark von der Öffentlichkeit protestiert (Vgl. \textcite[253]{everydayLife} und \textcite{airtelVoip}).
+
+% 1.2.4
+\subsubsection{Aktivisten}
+
+Die Seite, welche gegen Facebook argumentiert, sind die `Net Neutrality' Aktivisten, vereint unter dem Banner der `Save the Internet' Kampagne.
+Zusammengesetzt aus Technologieinteressierten, primär den Mitarbeitern von Tech-Startups, die sich selbst als ``geeks and enthusiasts from various fields: technology, law, journalism, design, policy" \parencite{sti2015} beschreiben.
+
+\medskip
+
+Die Aktivisten können als eine `recursive public' verstanden werden. Welche von \textcite{twoBits} wie folgt definiert wird:
+
+\medskip
+
+\begin{quote}
+A recursive public is a public that is constituted by a shared concern for maintaining the means of association through which they come together as a public.
+Geeks find affinity with one another because they share an abiding moral imagination of the technical infrastructure, the Internet, that has allowed them to develop and maintain this affinity in the first place. - \cite[28]{twoBits}
+\end{quote}
+
+\medskip
+
+Dies deckt sich mit dem Handeln der Aktivisten, welche sich über online Plattformen kennengelernt und unter dem gemeinsamen Ziel - das Internet wie sie es kennen (und lieben) zu verteidigen - vereinigt haben.
+
+\medskip
+
+Obwohl die Mitglieder von `Save the Internet' nur einen kleinen Teil der Bevölkerung repräsentieren, nämlich den der high-tech Arbeiter deren Anteil bei 2\% liegt (in einem Land in welchem 70\% der Menschen landwirtschaftlichen Tätigkeiten nachgehen), haben sie doch eine besondere Position inne. Denn sie spielen eine zentrale Rolle in der Vorstellung des neuen Indiens, welches in der globales Wirtschaft mitmischen kann (Vgl. \cite{thomas2012}).
+Sie sind das Symbol der aufsteigenden Mittelschicht, welche durch Unternehmerschaft und harte Arbeit die indische Wirtschaft (7,7\% des 2,6 Billionen BIP 2017 \autocite{statistaIndiaGDP}\autocite{imfIndiaGDP}) und Indiens Position in der Welt voran treiben (8\% der Startups im Silicon Valley der 90er Jahre wurden von Indern angeführt \parencite{upadhya2004}).
+
+\medskip
+
+In Ihrer öffentlichen Präsentation ist die Initiative angelehnt an die `Net Neutrality' Bewegung der USA: von der Namensgebung und dem Logo über die verwendeten Hashtags in den sozialen Medien bis zu dem Vokabular mit welchem sie arbeiten (Vgl. \cite{prasad2017}).
+Diese bewusst gewählten Assoziation mit dem erfolgreichen amerikanischen Modell, und auch die direkten Verweise auf westliche Popkultur, sollen die Kampagne für Ihre Zielgruppe ansprechender machen.
+
+Die Zielgruppe setzt sich nicht aus den Menschen zusammen welchen Free Basics helfen möchte, sondern aus dem indische Mittelstand. Denn die Sprache mit der die Menschen angesprochen werden ist `Hinglish', ein Mix aus Hindi und Englisch, für deren Verständnis sowohl Englischkenntnisse - welche den Zugang zu neuen, qualifizierten Jobs ermöglichen und, ebenso wie eine Nähe zum Westen, die neue Mittelschicht Indiens prägen (Vgl. \cite{fernandes2006}) - als auch ein hohen Sprachniveau in Hindi voraussetzt.
+
+\medskip
+
+Ironischerweise, obwohl die Aktivisten gegen Facebook wettern, verbreiten sie Ihre Botschaft fast ausschließlich über soziale Medien, also auch zu großen Teilen über Facebook. Andere Kanäle um auf Ihre technopolitische (politische Meinungsbildung, getrieben durch Technologie) Kampagne aufmerksam zu machen sind u.a. (Vgl. \cite{prasad2017}):
+\begin{itemize}
+  \item YouTube: z.B. durch Erklärvideos einer angeheuerten komödischen Gruppe
+  \item Ihr eigener Blog: in welchem die Probleme in einer seriöseren Form geschildert werden
+  \item Twitter:
+    \begin{itemize}
+      \item zur direkten Interaktion untereinander und mit den Anhängern
+      \item der Konfrontation mit Befürwortern von Internet.org
+      \item um bei Tech-Firmen Gutheißungen für die Bewegung zu erbitten
+    \end{itemize}
+\end{itemize}
+
+% 2
+\section{Lebenszyklus der Initative}
+
+Nachdem nun die Ausgangslage geschildert wurde, wird in diesem Teil der Verlauf des Projektes von der Einführung bis zum Verbot nach verfolgt.```
+
+\subsection{Übersicht}
+
+\definecolor{BGColor}{rgb}{1.0,1.0,1.0}
+\begin{timeline}{2015}{2017}{250}{145}
+  \MonthAndYearEvent{2}{2015}{Formeller Start}
+  \MonthAndYearEvent{4}{2015}{Partielle Einführung}
+  \MonthAndYearEvent{7}{2015}{Umbenennung zu Free Basics}
+  \MonthAndYearEvent{11}{2015}{Vollständige Einführung}
+  \MonthAndYearEvent{2}{2016}{Verbot}
+\end{timeline}
+
+Nur ein Jahr hat es vom offizellen Start Anfang 2015, bis zum Verbot im Februar 2016 gedauert.
+
+In der Zwischenzeit versuchte Facebook, nach initiellen Startschwierigkeiten, die Initiative durch ein Rebranding zu retten, was aber nicht reichte um die kritische Öffentlichkeit zu beeinflussen, deren Meinung bis zu den Entscheidungsträgern der zuständigen Behörde vordringen konnte.
+Welche sich dann mit einem indirekten Verbot auf der Seite der Protestierenden positionierte.
+
+% 2.2
+\subsection{Formaler Start} \label{formal}
+
+Nachdem \textcite{HumanRight} das Konzept vorstellte, wurde es nun durch die Partnerschaft mit dem Mobilfunkanbieter Reliance Realität.
+
+Die Umsetzung sah folgendermaßen aus: Abonnenten von Reliance (solche im Besitz einer SIM Karte, nicht unbedigt eines laufenden Vertrages) haben die Möglichkeit über eine spezielle App auf den Seiten der Internet.org zu browsen.
+Diese Implementation zieht aber einige große Probleme mit sich. So werden alle nicht-Reliance Abonenten ausgeschlossen was, da Reliance `nur' der viert Größte Anbieter mit 11\% Marktanteil\autocite{mobileSubscribers} ist, ein Großteil der Bevölkerung darstellt.
+
+Auch lässt sich die Qualität (Geschwindigkeit) des Services, welche 4-12 mal langsamer ist, nicht mit der eines zahlenden Kunden vergleichen.
+Die langsame Verbindung hat dabei mehrere Gründe. Zum einen wird die Bandbreite von Reliance gedrosselt um den zahlenden Abonnenten Vorrang zu verschaffen. Zu dem laufen alle Verbindungen durch einen Facebook Proxy Server in Europa, was dazu führt, dass die Route erheblich verlängert, erneut gedrosselt, und jegliche Verschlüsslung (TLS) umgangen wird(Vgl. \cite{walledGarden}).
+
+\medskip
+
+Zeitgleich kündigte Airtel, nachdem sie in der Vergangenheit schon mit der Idee experimentierten (beschrieben in Abschnitt \ref{netzneutralität}), ein ähnliches Konzept zu Internet.org an, bei welchem Firmen die Mobilfunkkosten für den kostenfreien Zugriff auf Ihre Services tragen würden.
+Airtel's Ankündigung wurde mit einer Welle der Entrüstung aufgenommen, worauf hin Airtel auch schnell von der Idee abließ.
+Dieser angesammelte Unmut wendete sich nun aber auch gegen Internet.org.
+
+% 2.3
+\subsection{Start in ausgewählten Regionen}
+
+Im Anschluss an den formalen Start begann Facebook mit dem Aufsetzen der Netzinfrastruktur in den Regionen Tamil Nadu, Maharashtra, Andhra Pradesh, Gujarat, Kerala und Telangana.
+Gleichzeitig fingen erneute Debatten um `Net-Neutrality' an Boden zu gewinnen.
+Facebooks Dienst sei nicht konform mit dem Bestreben eines freien Internets, trotz der Bewerbung des Produkts als ``kostenloses Facebook" \parencite[3]{prasad2017}, später als ein ``step towards digital equality" (Ausführung in \ref{rebranding}).
+
+\medskip
+
+In der ländlichen Bevölkerung gab es auch geteilte Meinungen hinsichtlich des Zugangs zum Internet, zumindest bei jenen, die sich selbst informiert haben oder informiert werden (von z.B. Nachrichtendiensten wie Digit.in) \parencite{digitYT}.
+Hier kommt es jedoch zumeist zur Ignoranz des großen Ganzen, der Dienst wird als positiv entgegengenommen und genutzt, Aktionen wie die wortwörtlich vorgeschriebene Unterschreibung zugunsten von Facebook in der Debatte um Netzneutralität\autocite{ndtvYT} werden ohne weiteres Hinterfragen und potenziell aufgrund von Unwissen unterstützt.
+Einzig ein initielles Interesse an einem kostenlosen Dienst im allgemeinen Sinne ist ein gemeines Ziel.
+
+\medskip
+
+Anzumerken bei alledem ist, dass der Großteil der Bevölkerungsgruppe, die in Facebooks Werbekampanien als Zielgruppe des Dienstes beschrieben werden, entweder keinen, oder nur einen gerinfügigen Nutzen genießt.
+Jene, die sich den Besitz eines digitalen Endgeräts (id est Smartphones, etc.) leisten können, sind aufgrund der geringen Preise auch in der Lage, eine stabilere und schnellere Internetverbindung als Facebooks Dienst sie anbietet, zu erwerben.
+Der Rest, also Personen, die (zu Teilen weit) unterhalb der Armutsgrenze leben, haben weder Wege, FreeBasics zu nutzen, noch einen Grund dafür \parencite[257]{everydayLife}.
+
+\medskip
+
+So ist die Nutzung des Dienstes selbst fern vom beinahe utopischen Beispiel von Facebooks Seite des Landwirts Ganesh, welcher mithilfe von Free Basics seinen Ertrag verdoppelte, indem er Informationen über das Wetter und aktuelle Warenpreise nutzt, ein Beispiel für die Angabe, dass für alle 10 Teilnehmer an Internet.org eine Person aus der Armut gehoben wird \parencite[4]{prasad2017}.
+In der Realität besteht die Nutzerbasis wie besagt aus männlichen Jugendlichen und jungen Erwachsenen.
+Hier wurde Facebook zu einem Bestandteil des Lebens, der sich fast virusartig durch persönliche Weiterempfehlung verbreitete.
+Dies geht über zu spezialisierten Kursen von neuen oder schon vorher `Tech-Affinen', die Teilnehmern Grundlegendes von der Inbetriebnahme von Smartphones bis zum Kommentieren bei Facebook beibringen \parencite{empowermentThroughFacebook}.
+
+\medskip
+
+Dies allein ist natürlich keine schlechte Sache; besagte Menschen gehören zu einer Generation von Gelehrten, jedoch aufgrund der hohen Mensch- zu Arbeitsplatzratio zumeist arbeitslosen, zwanzig- bis dreißigjährigen Indern, die sich von der Welt abgehängt fühlen.
+Eine Lehrfunktion bietet eben solchen neben Arbeit auch einen Daseinszweck.
+
+\medskip
+
+Besagte Kurse brachten einen weiteren positiven Effekt mit sich, die Verbreitung des Englischen durch Selbstbeibringung in Gebieten, in denen vorher weder Englisch noch Hindi gesprochen wurde \parencite{empowermentThroughFacebook}. Die Tatsache, dass der Großteil der Analphabeten vor Allem unter der genannten Gruppe, welche unter der Armutsgrenze lebt, zu finden sind, bleibt hierbei leider bestehen.
+
+\medskip
+
+Ferner stehen positiven Aspekten weitere bereits etablierte soziale Normen im Wege; Informationsverbreitung geschieht im ländlichen Indien immer noch zu großen Teilen über Mundpropaganda \parencite[259]{everydayLife}, Mädchen wird Zugriff auf Medien zugunsten des (erstgeborenen) Jungen verwährt \parencite{empowermentThroughFacebook} und soziale Gruppierungen werden vom Realen ins Virtuelle übernommen.
+
+\medskip
+
+% cut
+All dies hätte sich nicht durch eine ausschließlich kostenpflichtige Variante des Internets geändert.
+Allein die Zahlen der nationalen Internetverbreitungsrate (2016 25\% $\to$ 2019 50\%) sprechen für eine graduelle Veränderung gen Akzeptanz bezüglich des Internets.
+
+% 2.4
+\subsection{Rebranding als Free Basics}
+
+Drei Monate nach dem Start von Internet.org begann die indische Regierung unter Premierminister Narendra Modi die `Digital India campaign' mit Zielen wie erweiterter Breitbandkonnektivität, Universalzugang zu Mobilnetzen und einem Programm für öffentlichen Internetzugang \parencite{digitalPillars}.
+Hierfür trat die Regierung mit Firmen des Silicon Valley in Kooperation, unter anderem Facebook (Bereitstellung von Wifi Hotspots in ländlichen Gebieten) \parencite[254]{everydayLife},
+wobei Modi und Zuckerberg ein öffentliches Image der engeren Zusammenarbeit aufbauten.
+
+\medskip
+
+Dies führte selbstverständlich zu weiteren Unruhen unter den wachsenden Protesten gegen Internet.org, welche sich von nur wenigen Teilnehmern Anfang April, zu global verteilten Kommentaren zuwider Facebook eineinhalb Monate später ausweiteten \autocite{BBC3}.
+Während diese primär online abliefen, fingen Menschen an auf die Straße zu gehen.
+
+\medskip
+
+Zuckerbergs reaktive Äußerung ``universal connectivity and net neutrality can and must co-exist", wobei der Dienst erstmalig als ``basic free services" bezeichnet wurde, ließen die Stimmen (der `Safe The Internet coalition') lediglich lauter erklingen.
+Wenige Wochen später unterschrieben 67 sog. `digital rights' Aktivistengruppen (u.A. `i Freedom Uganda', `Usarios Digitales' aus Equador und `ICT Watch' aus Indosnesien) einen an Facebook gerichteten Brief über Bedenken am Projekt.
+
+\medskip
+
+Nachdem weitere Unternehmen aufgrund der Proteste austraten, gab Facebook den größten Stimmen nach. Unter dem neuen Namen `Free Basics' lockerte Facebook die Vorgaben für Webseiten Betreiber und baute HTTPS Unterstützung ein, was zu einer Erweiterung des Angebots um 60 neue Seiten (z.B. Wikipedia) führte.
+
 % \printbibliography
+
 \end{document}
