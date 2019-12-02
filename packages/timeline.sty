@@ -1,0 +1,342 @@
+%% Package: timeline.sty
+%% Author: Tim Storer, School of Computer Science ,University of St Andrews
+%% URL:    http://www.cs.st-andrews.ac.uk/~tws/tools/latex/timeline.zip
+%%
+%% Description
+%% ==========
+%%
+%% This package provides a mechanism for type-setting historical timeline
+%% information.  The package can currently type set information to the
+%% nearest month.  The package should not be confused with the
+%% timeline.sty package available on CTAN.
+%%
+%% Usage
+%% =====
+%%
+%% Include the package in the normal way by placing \usepackage{timeline}
+%% in the header information of your latex document.
+%%
+%% Basic Environment
+%% -----------------
+%%
+%% A timeline is specified as an environment with four arguments.
+%%
+%% \begin{timeline}{1865}{2005}{200}{175}
+%%
+%% \categorylabel{INVENTIONS}{100}
+%%
+%% \YearEvent{1869}{Thomas Edison patents the electronic vote recording machine}{1}
+%% \YearEvent{1888}{Australian (secret) ballot used in a General Election}
+%% \YearEvent{1892}{Myers Automiatic Booth Lever machine used in New York}
+%% \YearEvent{1962}{Joesph Harris adapts punch card counting machines for voting}
+%% \YearEvent{1968}{Mark-sense technology adapted for voting}
+%% \YearEvent{1972}{Touch tone telephone voting trialed}
+%% \YearEvent{11}{1978}{First Use of DRE Machines}
+%%
+%% \end{timeline}
+%%
+%% The first two arguments specify the year range of the timeline (which
+%% must be at least one).  The second two arguments specify the width and
+%% height of the timeline graphic (in pts).  To add entries to the
+%% timeline, two commands are used.
+%%
+%% \YearEvent[1]{1978}{First Use of DRE Machines}
+%% \MonthAndYearEvent[1]{11}{1978}{First Use of DRE Machines}
+%%
+%% The first command, \YearEvent, specifies a timeline event to the
+%% nearest year (in the example, 1978).  In the second command, an
+%% additional argument is used to specify the month (11 - November) of an
+%% event.  \MonthAndYearEvent{1}{1978}{An event} is equivalent to
+%% \YearEvent{1978}{An Event}.  Both commands take a final description
+%% label argument and an optional category argument.
+%%
+%% Timeline items are added to the timeline in the order in which they
+%% are specified.  The horizontal position of events is calculated from
+%% the date of the event; there is an assumption that events are
+%% specified in categories by date order.  If there is sufficient space
+%% between sequential events they are placed in the same vertical
+%% position, else a vertical positioning counter is incremented.
+%%
+%% Colours
+%% -------
+%%
+%% The colouring of each timeline can be configured by redefining
+%% colours.  The background colours that can be redefined are:
+%%
+%% +------------+------+----------------+
+%% | Name       | Mode | Default        |
+%% +------------+------+----------------+
+%% | BGColor    | rgb  | 0.95,0.95,0.95 |
+%% | ChartColor | rgb  | 0.8,0.8,0.8    |
+%% +------------+------+----------------+
+%%
+%% BGColour specifies the background border colour which fringes the
+%% timeline.  ChartColour specifies the colour of the chart on which time
+%% timeline is written.
+%%
+%% Categories
+%% ----------
+%%
+%% Timeline events can be optionally specified as belonging to a single
+%% category (e.g. acts, patents, inventions), as described in the section
+%% on events.  The text of event categories can be coloured together by
+%% redefining the predefined colours Cat1 to Cat9.  By default, all
+%% category text is black.
+%%
+%% Labels
+%% ------
+%%
+%% Background labels can be placed on the timeline using the
+%% \categorylabel command.  The command takes two arguments - the style
+%% and text of the label, and the vertical positioning (with 0 as the
+%% top of the timeline.  The colour of the timeline label can be changed
+%% by redefining the colour LabelColour.
+%%
+%% Configuration Commands
+%% ----------------------
+%%
+%% The package includes a number of commands that can be re-defined before a
+%% timeline environment to customise appearance.  These commands are:
+%%
+%%  +----------------------+-------------------------------------+
+%%  |Command[args]         | Default                             |
+%%  +----------------------+-------------------------------------+
+%%  | \eventstyle[text]    | \raggedright\tiny                   |
+%%  | \eventmark           | $\bullet$                           |
+%%  | \eventdate[mon,year] | \if 0#1                             |
+%%  |                      |  \tiny\bf#2                         |
+%%  |                      | \else                               |
+%%  |                      |  \tiny\bf\ToLongMonth{#1}, #2       |
+%%  |                      | \fi                                 |
+%%  +----------------------+-------------------------------------+
+
+%% The \eventstyle defines the appearance of the label argument of items on
+%% the timeline.  The \eventmark command defines the appearance of the
+%% event date marker on the timeline (by default, a bullet).  The
+%% \eventdate command defines the appearance of the date for each item on
+%% the timeline.  The default definition illustrates the usage of the
+%% \ToLongMonth command, which converts a number representation of a
+%% month (1-12) to a text month name.  A second utility command
+%% \ToShortMonth converts month numbers into three letter month labels.
+%%
+%% Two lengths can also be redefined:
+%%
+%%  +----------------------+-------------------------------------+
+%%  | Counter              | Default                             |
+%%  +----------------------+-------------------------------------+
+%%  | \eventwidth          | 100                                 |
+%%  | \vtlskip             | 25                                  |
+%%  +----------------------+-------------------------------------+
+%%
+%% \eventwidth is the width of the text label for an event (not including
+%% the date).  \vtlskip defines the vertical space between events.  Both
+%% counters are converted to points.
+%%
+%% See timeline/example.tex for sample usage.
+
+\ProvidesPackage{timeline}
+\RequirePackage{color}
+
+%%%%%%%%%% Basic Colours %%%%%%%%%%
+
+\definecolor{BGColor}{rgb}{0.95,0.95,0.95}
+\definecolor{LabelColor}{rgb}{0.7,0.7,0.7}
+\definecolor{ChartColor}{rgb}{0.8,0.8,0.8}
+
+%%%%%%%%%% Category Colours %%%%%%%%%%
+
+\definecolor{Cat1}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat2}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat3}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat4}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat5}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat6}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat7}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat8}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat9}{rgb}{0.0,0.0,0.0}
+\definecolor{Cat0}{rgb}{0.0,0.0,0.0}
+
+%%%%%%%%%% Counters %%%%%%%%%%
+
+\newcount\vtlskip
+\newcount\baseline
+
+\newcount\starty
+\newcount\totaly
+\newcount\eventy
+\newcount\eventm
+\newcount\timelinewidth
+\newcount\timelineheight
+
+\newcount \bgwidth
+\newcount \bgheight
+\newcount \bgxpos
+\newcount \bgypos
+\newcount\bgwidthmargin
+
+\newcount\tl@cg
+
+\newcount\currvpos
+\currvpos=\baseline
+
+\newcount\currhpos
+
+\newcount\labelh
+\newcount\labelv
+
+\newlength\eventheight
+\newcount\eventwidth
+
+%%%%%%%%%% Configurable Options %%%%%%%%%%
+
+\eventwidth=100
+\vtlskip=25
+
+\newcommand\eventcolor{Cat1}
+
+\newcommand{\eventstyle}[1]{\raggedright\tiny #1}
+\newcommand{\eventmark}{$\bullet$}
+\newcommand{\eventdate}[2]{\if 0#1 \tiny\bf#2\else\tiny\bf\ToLongMonth{#1}, #2\fi}
+
+\newcommand\@resettobaseline{}
+
+%%%%%%%%%% Timeline Environment %%%%%%%%%%
+
+\newenvironment{timeline}[4]{
+  \starty=#1
+  \totaly=#2
+  \baseline=#4
+  \renewcommand\@resettobaseline{
+    \currvpos=\baseline
+    \currhpos=0
+  }
+  \advance \baseline by -\vtlskip
+  \advance\totaly-\starty
+  \timelinewidth=#3
+  \timelineheight=#4
+
+  \newcount\chartwidth
+  \chartwidth=\bgwidth
+  
+  \bgwidth=#3
+  \bgwidthmargin=\eventwidth
+  \multiply\bgwidthmargin 3
+  \divide\bgwidthmargin 2
+  \advance\bgwidth \bgwidthmargin
+
+  \bgheight=#4
+  \advance\bgheight 50
+  \bgxpos=-25
+  \bgypos=50
+
+  \begin{picture}(\bgwidth,\bgheight)(0,0)
+    \textcolor{BGColor}{\put(0,0){\rule{\bgwidth pt}{\bgheight pt}}}
+    \begin{picture}(#3,#4)(\bgxpos,\bgxpos)
+
+      % Chart colour
+      \textcolor{ChartColor}{\put(2,-2){\rule{#3 pt}{#4 pt}}}
+
+      % Timeline
+      \put(-3,#4){#1}
+      \put(#3,#4){#2}
+      \tl@cg=#4
+      \advance \tl@cg by -3
+      \put(-1,\tl@cg){~\rule{\timelinewidth pt}{1pt}}
+      \advance \tl@cg by -2
+      \put(0,\tl@cg){$\bullet$}
+      \put(\timelinewidth,\tl@cg){$\bullet$}
+
+    }{
+    \end{picture}
+  \end{picture}
+}
+
+%%%%%%%%%% Event Commands %%%%%%%%%%
+
+\newcommand{\MonthAndYearEvent}[4][0]{
+ \ifcase #1
+ \or \renewcommand{\eventcolor}{Cat1}
+ \or \renewcommand{\eventcolor}{Cat2}
+ \or \renewcommand{\eventcolor}{Cat3}
+ \or \renewcommand{\eventcolor}{Cat4}
+ \or \renewcommand{\eventcolor}{Cat5}
+ \or \renewcommand{\eventcolor}{Cat6}
+ \or \renewcommand{\eventcolor}{Cat7}
+ \or \renewcommand{\eventcolor}{Cat8}
+ \or \renewcommand{\eventcolor}{Cat9}
+ \or \renewcommand{\eventcolor}{Cat0}
+ \fi
+ \def\@eventtext{\parbox[t]{\eventwidth pt}{\eventstyle{#4}}}
+ \eventy=#3
+ \eventm=#2
+
+ \advance \eventy -\starty
+ \multiply \eventy by \timelinewidth 
+ \divide\eventy by \totaly
+
+ \advance \eventm by -1
+ \multiply \eventm by \timelinewidth
+ \divide \eventm by \totaly
+ \divide \eventm by 12
+ \advance \eventy by \eventm
+
+ \ifdim \eventy pt < \currhpos pt
+  \advance\currvpos by -\vtlskip
+ \else
+   \currvpos = \baseline
+ \fi
+ \def\@event{\parbox[t]{\eventwidth pt}{
+     \raggedright \eventmark {\eventdate{#2}{#3}}\put(0,0){~\@eventtext} }
+ }
+ \put(\eventy,\currvpos){\textcolor{\eventcolor}{\@event}}
+ \currhpos = \eventy
+ \advance \currhpos\eventwidth
+}
+
+\newcommand{\YearEvent}[3][1]{\MonthAndYearEvent[#1]{1}{#2}{#3}}
+
+%%%%%%%%%% Category Label Command %%%%%%%%%%
+
+\newcommand{\categorylabel}[2]{
+\def\@labeltext {\textcolor{LabelColor}{\parbox[c]{\timelinewidth pt}{\centering \bf\Huge #1}}}
+ \labelv=\timelineheight
+ 
+ \advance\labelv -#2
+ 
+ \put(0,\labelv){\@labeltext }
+}
+%%%%%%%%%% Utility Commands %%%%%%%%%%
+
+\newcommand\ToLongMonth[1]{
+\ifcase #1
+\or Januar%
+\or Februar%
+\or März%
+\or April%
+\or Mai%
+\or Juni%
+\or Juli%
+\or August%
+\or September%
+\or Oktober%
+\or November%
+\or Dezember%
+\fi}
+
+\newcommand\ToShortMonth[1]{
+\ifcase #1
+\or Jan%
+\or Feb%
+\or Mar%
+\or Apr%
+\or May%
+\or Jun%
+\or Jul%
+\or Aug%
+\or Sep%
+\or Oct%
+\or Nov%
+\or Dec%
+\fi}
+
+%%%%%%%%%% End of timeline.sty %%%%%%%%%%
