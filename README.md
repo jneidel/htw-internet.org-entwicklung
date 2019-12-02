@@ -6,7 +6,9 @@
 
 ## Ressourcen
 
-### Citation guide
+### Latex guide
+
+#### Citations
 
 ```tex
 % given this source in bibliography:
@@ -34,3 +36,26 @@
 
 see: [biber introduction](https://en.wikibooks.org/wiki/LaTeX/Bibliographies_with_biblatex_and_biber)
 
+#### Quotes
+
+```tex
+% citations with corret quotes:
+``this is a quote" or a `specific phrase'
+% instead of the wrong "this is a quote" or a 'specific phrase'
+```
+
+Output of wrong quotes: ![](https://i.imgur.com/NZOdoiG.png)
+
+Output of correct quotes: ![](https://i.imgur.com/rkB7vLH.png)
+
+#### Text breaks
+
+To separate two blocks of text use `\medskip`.
+
+#### Sections
+
+There are different level of sections:
+- `\section` is the top level section (e.g. 2.)
+- `\subsection` is a nested section (e.g. 2.1.)
+- `\subsubsection` is a nested a level deeper (e.g. 2.1.3.)
+- etc.
